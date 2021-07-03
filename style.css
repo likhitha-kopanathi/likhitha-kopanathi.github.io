@@ -35,11 +35,10 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .services, .skills, .teams, .contact, footer{
+.about, .skills, .practicum, .contact{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
-.services .serv-content,
 .skills .skills-content,
 .contact .contact-content{
     display: flex;
@@ -221,10 +220,11 @@ section .title::after{
     width: 45%;
 }
 .about .about-content .left img{
-    height: 200px;
-    width: 400px;
+    height: 250px;
+    width: 350px;
     object-fit: cover;
     border-radius: 6px;
+    margin-right: 15%;
 }
 .about .about-content .right{
     width: 55%;
@@ -257,51 +257,6 @@ section .title::after{
     background: none;
 }
 
-/* services section styling */
-.services, .teams{
-    color:#fff;
-    background: white;
-}
-.services .title::before,
-.teams .title::before{
-    background:black;
-}
-.services .title::after,
-.teams .title::after{
-    background: white;
-    content: "What I provide";
-}
-.services .serv-content .card{
-    width: calc(33% - 20px);
-    background: #222;
-    text-align: center;
-    border-radius: 6px;
-    padding: 50px 25px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-.services .serv-content .card:hover{
-    background: crimson;
-}
-.services .serv-content .card .box{
-    transition: all 0.3s ease;
-}
-.services .serv-content .card:hover .box{
-    transform: scale(1.05);
-}
-.services .serv-content .card i{
-    font-size: 50px;
-    color: crimson;
-    transition: color 0.3s ease;
-}
-.services .serv-content .card:hover i{
-    color: #fff;
-}
-.services .serv-content .card .text{
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-}
 
 /* skills section styling */
 
@@ -366,89 +321,18 @@ section .title::after{
     width: 90%;
 }
 .skills-content .right .css::before{
-    width: 80%;
+    width: 90%;
 }
 .skills-content .right .js::before{
-    width: 60%;
+    width: 70%;
 }
 .skills-content .right .php::before{
     width: 70%;
 }
 .skills-content .right .mysql::before{
-    width: 60%;
+    width: 80%;
 }
 
-/* teams section styling */
-.teams .title::after{
-    content: "What I did";
-}
-.teams .heading{
-    color: black;
-}
-.teams .title{
-    color: black;
-}
-li{
-    text-align: left;
-}
-.teams .carousel .card{
-    background: blue;
-    border-radius: 6px;
-    padding: 25px 35px;
-    text-align: center;
-    overflow: hidden;
-    transition: all 0.3s ease;
-}
-.teams .carousel .card:hover{
-    background: crimson;
-}
-.teams .carousel .card .box{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-}
-.teams .carousel .card:hover .box{
-    transform: scale(1.05);
-}
-.teams .carousel .card .text{
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-}
-.teams .carousel .card img{
-    height: 150px;
-    width: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid crimson;
-    transition: all 0.3s ease;
-}
-.teams .carousel .card:hover img{
-    border-color: #fff;
-}
-.owl-dots{
-    text-align: center;
-    margin-top: 20px;
-}
-.owl-dot{
-    height: 13px;
-    width: 13px;
-    margin: 0 5px;
-    outline: none!important;
-    border-radius: 50%;
-    border: 2px solid crimson!important;
-    transition: all 0.3s ease;
-}
-.owl-dot.active{
-    width: 35px;
-    border-radius: 14px;
-}
-.owl-dot.active,
-.owl-dot:hover{
-    background: crimson!important;
-}
 
 /* contact section styling */
 .contact .title::after{
@@ -546,7 +430,7 @@ li{
   background: none;
 }
 /* footer section styling */
-footer{
+/* footer{
     background: #111;
     padding: 15px 23px;
     color: #fff;
@@ -558,7 +442,7 @@ footer span a{
 }
 footer span a:hover{
     text-decoration: underline;
-}
+} */
 
 
 /* responsive media query start */
@@ -686,4 +570,116 @@ footer span a:hover{
         font-size: 23px;
         line-height: 38px;
     }
+}
+.practicum .title::after{
+    content: "what I did";
+}
+
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  
+  .section {
+    width: 50%;
+    height: 100%;
+    
+    padding-bottom: 5px;
+  }
+  
+  iframe {
+    width: 70%;
+    height: 38vh;
+    float: right;
+    
+    padding-bottom: 5px;
+
+  }
+
+img {
+    
+    height: 38vh;
+    float: right;
+    width: 560;
+    height: 315;
+    padding-bottom: 5px;
+}
+
+.image img {
+    float:none;
+    width: 900px;
+    height: 700px;
+}
+
+.connect {
+    font-size: larger;
+}
+
+.practicum .connect .title::after{
+    content: "what is it";
+}
+
+.connect .title {
+    color: crimson;
+}
+/* #book .iframe {
+    align-items: center;
+} */
+
+
+.dropdown {
+    /* float: left; */
+    overflow: hidden;
+    float: right;
+
+  }
+  
+  .menu .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+
+  
+  .menu .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:crimson;
+    min-width: 160px;
+   
+    z-index: 1;
+  }
+  
+  .menu .dropdown-content a {
+    float: none;
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: larger;
+  }
+  
+  .menu .dropdown-content a:hover {
+    background-color:crimson;
+    color: black;
+  }
+  
+  .menu .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+p {
+    word-spacing: smooth;
+    
 }
