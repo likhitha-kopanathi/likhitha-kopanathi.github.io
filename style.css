@@ -669,6 +669,10 @@ img {
     text-align: left;
     font-size: larger;
   }
+
+  h1{
+      text-align: center;
+  }
   
   .menu .dropdown-content a:hover {
     background-color:crimson;
